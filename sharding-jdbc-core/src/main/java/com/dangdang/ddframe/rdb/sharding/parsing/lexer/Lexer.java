@@ -32,10 +32,16 @@ import lombok.RequiredArgsConstructor;
  */
 @RequiredArgsConstructor
 public class Lexer {
-    
+    /**
+     * 输出字符串
+     * 比如：SQL
+     */
     @Getter
     private final String input;
-    
+
+    /**
+     * 词法标记字典
+     */
     private final Dictionary dictionary;
     
     private int offset;
